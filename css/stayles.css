@@ -531,7 +531,7 @@ li {
 
 .projects_li .img-text {
     transform: translateY(+100%);
-    
+    margin-top: ;
 }
 
 .projects_li:hover>.img-text {
