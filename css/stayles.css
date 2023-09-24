@@ -529,6 +529,10 @@ li {
     line-height: 1.87;
 }
 
+.projects_li .img-text {
+    transform: translateY(+100%);
+    
+}
 
 .projects_li:hover>.img-text {
     transform: translateY(-100%);
