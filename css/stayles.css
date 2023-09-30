@@ -52,9 +52,10 @@ svg {
 
 .navigation_bar .nav_tap {
     font-weight: 500;
-
     letter-spacing: 0.28px;
     text-decoration: none;
+    position: relative;
+
 }
 
 .navigation_bar {
@@ -66,6 +67,7 @@ svg {
 
 }
 
+
 .navigation_container {
     display: flex;
     align-items: center;
@@ -74,6 +76,8 @@ svg {
 
 .nav_tap {
     color: var(--letter-color);
+    padding: 49px 0;
+    position: relative;
 }
 
 .navigation_bar :hover {
@@ -84,19 +88,20 @@ svg {
     color: var(--select-color);
 }
 
-.current {
-    color: var(--select-color);
+.navigation > .navigation_bar .link:focus::after,
+.navigation > .navigation_bar .link:active::after,
+.navigation > .navigation_bar .current.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--select-color);
+  bottom: 17px;
+  left: -1px;
 }
 
-.current:active::after {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 5px;
-    background-color: pink;
-    left: 0;
-    bottom: -1px;
+.navigation > .navigation_bar .link:hover {
+  color: var(--select-color);
 }
 
 
@@ -427,6 +432,7 @@ svg {
 }
 
 /* section regular_customers*/
+
 /* section portafolio inicio*/
 .linea {
     border: 1px solid #ececec;
