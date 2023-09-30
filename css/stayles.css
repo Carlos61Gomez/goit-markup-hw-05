@@ -484,10 +484,13 @@ li {
 /* section projects */
 
 .list {
-    /* display: inline-block; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .portfolio-item {
@@ -660,7 +663,6 @@ p {
     align-items: center;
 }
 
-.social-networks-item {}
 
 .social-networks-item-footer:hover {
     background-color: var(--select-color);
