@@ -96,7 +96,7 @@ svg {
   width: 100%;
   height: 4px;
   background-color: var(--select-color);
-  bottom: 17px;
+  bottom: 16px;
   left: -1px;
 }
 
@@ -133,6 +133,18 @@ svg {
     border-bottom: solid 0.1px;
     border-color: #ececec;
 }
+
+/* backdrop*/
+
+.backdrop{
+
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* backdrop*/
+
 
 
 /* header */
