@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="css/stayles.css" />
+    <link rel="stylesheet" href="/modal/modal.css">
     
     <title>WebStudio</title>
   </head>
@@ -47,17 +48,20 @@
     </header>
 
     <!-- main-content-section-->
-    <main>
       <section class="main_seccion ">
         <div class="container">
-          <div class="backdrop">
-
-          
-          </div>
           <h1 class="main_title ">soluciones eficientes para <br> su negocio</h1>
-          <button class="btn-primary" type="button">Solicita nuestro servicio</button>
+          <button data-modal-open class="btn-primary" type="button" >Solicita nuestro servicio</button>
         </div>
       </section>
+<!-- Modal Main-Button -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="data-modal-close" data-modal-close> Cerrar</button>
+      </div>
+    </div>
+ 
 
       <section class="detailed container">
         <ul class="section_ul detailed_ul">
@@ -387,7 +391,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
 
